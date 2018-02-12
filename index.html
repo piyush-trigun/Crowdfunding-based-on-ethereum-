@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>Crowd Funding Platform</title>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body class="container">
+
+  <h1>World's best crowdfunding platform</h1>
+
+  <div class="col-sm-12">
+    
+    <div class="table-responsive">
+    
+     <h2>Campaigns added to our platform</h2>
+
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Campaign_Id</th>
+            <th>Beneficiary Name</th>
+            <th>Project Description</th>
+            <th>Funding Goal(ethers)</th>
+            <th>Number Of Funders</th>
+            <th>Amount Raised(ethers)</th>
+          </tr>
+        </thead>
+        <tbody id="campaign-rows">
+        </tbody>
+      </table>
+   </div>
+  
+
+   <div class="container-fluid">
+
+     <h2>Add a new campaign</h2>
+     <div id="msg"></div>
+
+     <input type="text" id="bname" placeholder="Enter your name"/>
+
+     <br>
+     <br>
+
+     <input type="text" id="pdesc" placeholder="Describe your project" />
+
+     <br>
+     <br>
+
+     <input type="text" id="fgoal" placeholder="Funding goal in ethers ( for eg. 0.5 ethers ) " />
+
+     <br>
+     <br>
+
+     <a href="#" onclick="newCampaign()" class="btn btn-primary">Add a new campaign</a>
+
+
+   </div>
+
+
+   <div class="container-fluid">
+
+     <h2>Contribute</h2>
+     <div id="msg"></div>
+
+     <input type="text" id="campaign" placeholder="Enter the campaign ID"/>
+
+     <br>
+     <br>
+
+     <input type="text" id="amount" placeholder="Amount to fund(ethers)" />
+
+     <br>
+     <br>
+
+     <a href="#" onclick="contribute()" class="btn btn-primary">Fund</a>
+
+
+   </div>
+
+</div>
+
+</body>
+<script src="https://cdn.rawgit.com/ethereum/web3.js/develop/dist/web3.js"></script>
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+<script src="index.js"></script> 
+
+
